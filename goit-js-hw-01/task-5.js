@@ -1,13 +1,7 @@
 "use strict";
 
-const china = 100;
-const chili = 250;
-const australia = 170;
-const india = 80;
-const yamaika = 120;
-
-let country = prompt("Из какой страны вы хотите доставить товар?");
-let countryLow = country.toLowerCase();
+const country = prompt("Из какой страны вы хотите доставить товар?");
+const countryLow = country.toLowerCase();
 switch (countryLow) {
   case "китай":
     alert(`Доставка в Китай будет стоить 100 кредитов`);
