@@ -9,6 +9,7 @@ while (true) {
     break;
   } else if ((input = Number(input))) {
     total += input;
+  } else if (input === 0) {
   } else {
     alert("Было введено не число, попробуйте еще раз");
   }

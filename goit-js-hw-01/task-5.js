@@ -5,30 +5,28 @@ const chili = 250;
 const australia = 170;
 const india = 80;
 const yamaika = 120;
-let country;
-let price;
 
-let input = prompt("Из какой страны вы хотите доставить товар?");
-let inputLow = input.toLowerCase();
-switch (inputLow) {
+let country = prompt("Из какой страны вы хотите доставить товар?");
+let countryLow = country.toLowerCase();
+switch (countryLow) {
   case "китай":
-    console.log(`Доставка в Китай будет стоить 100 кредитов`);
+    alert(`Доставка в Китай будет стоить 100 кредитов`);
     break;
 
   case "чили":
-    console.log(`Доставка в Чили будет стоить 250 кредитов`);
+    alert(`Доставка в Чили будет стоить 250 кредитов`);
     break;
 
   case "австралия":
-    console.log(`Доставка в Австралию будет стоить 170 кредитов`);
+    alert(`Доставка в Австралию будет стоить 170 кредитов`);
     break;
 
   case "индия":
-    console.log(`Доставка в Индию будет стоить 80 кредитов`);
+    alert(`Доставка в Индию будет стоить 80 кредитов`);
     break;
 
   case "ямайка":
-    console.log(`Доставка в Ямайку будет стоить 120 кредитов`);
+    alert(`Доставка в Ямайку будет стоить 120 кредитов`);
     break;
 
   default:
