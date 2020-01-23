@@ -19,5 +19,4 @@ while (true) {
 for (let i = 0; i < numbers.length; i++) {
   total += numbers[i];
 }
-console.log(numbers);
 alert(`Общая сумма чисел равна -- ${total}`);
