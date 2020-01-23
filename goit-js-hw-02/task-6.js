@@ -13,10 +13,11 @@ while (true) {
   if (Number.isNaN(input)) {
     alert("Было введено не число, попробуйте еще раз");
   } else {
-    total += input;
-    for (const input of numbers) {
-        console.log(numbers.splice(0, 0, input));
-      }    
+    numbers.push(input);
   }
 }
+for (let i = 0; i < numbers.length; i++) {
+  total += numbers[i];
+}
+console.log(numbers);
 alert(`Общая сумма чисел равна -- ${total}`);
