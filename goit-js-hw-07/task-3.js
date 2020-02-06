@@ -19,4 +19,5 @@ const images = [
 
 const element = document.querySelector("#gallery");
 const itemList = images.reduce((acc, item) =>acc + `<li class="liGallery"><img src =${item.url} alt=${item.alt} width=400 height=320></li>`,"");
-galleryList.insertAdjacentHTML("beforeend", itemList);
+element.insertAdjacentHTML("beforeend", itemList);
+console.log(itemList);
