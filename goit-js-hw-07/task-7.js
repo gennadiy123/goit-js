@@ -9,3 +9,4 @@ input.setAttribute("step", 20);
 input.addEventListener("input", function(event) {
   span.style.fontSize = this.value + "px";
 });
+
