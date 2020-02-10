@@ -17,17 +17,14 @@ elementUl.addEventListener("click", handleNavClick);
 singleBtn.addEventListener("click", handleClick);
 
 function handleNavClick(event) {
-  const target = event.target;
-  console.dir(event.target);
-  if (target.classList.contains("gallery__image")) {
+  if (event.target.classList.contains("gallery__image")) {
     elementDiv.classList.add("is-open");
-    elementImg.setAttribute("src", target.dataset.source);
+    elementImg.setAttribute("src", event.target.dataset.source);
   }
 }
 
 function handleClick(event) {
-  const target = event.target;
-  if (target.classList.contains("lightbox__button")) {
+  if (event.target.classList.contains("lightbox__button")) {
     elementImg.removeAttribute("src");
     elementDiv.classList.remove("is-open");
   }
